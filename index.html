@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">INÍCIO</a>
+  <a href="#band" class="w3-button w3-bar-item">MASCULINO</a>
+  <a href="#tour" class="w3-button w3-bar-item">FEMININO</a>
+  <a href="#contact" class="w3-button w3-bar-item">ACESSORIOS</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://dafitistatic-a.akamaihd.net/dynamic_yield/cms/static/images/1e596d0f9c6a1__522x251.jpg"
+  style="width:100%">
+  <img class="mySlides" src="https://dafitistatic-a.akamaihd.net/dynamic_yield/cms/static/images/25a08fd59eb43__luiza-barcelos.gif"
+  style="width:100%">
+  <img class="mySlides" src="https://dafitistatic-a.akamaihd.net/dynamic_yield/cms/static/images/380a6e8a65940__Dafiti_Homepage_SpringSummer_522x251cm.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">hapyness</h2>
+  <p class="w3-opacity"><i>Prazer em vestir bem</i></p>
+  <p class="w3-justify">Nossa loja se iteressa por beleza e moda. Venha confirir nossas promoções.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>CK</p>
+    <img src="https://static.dafiti.com.br/p/Rioutlet-Vestido-Rioutlet-Tule-Preto-4050-8463615-1-zoom.jpg" alt="Random Name" style="width:100%">
+    <p>Vestido Preto</p>
+  </article>
+  <article class="w3-third">
+    <p>Lacost</p>
+    <img src="https://static.dafiti.com.br/p/Endless-Vestido-Endless-Curto-Floral-Amarelo/Vinho-5010-5546005-1-zoom.jpg" alt="Random Name" style="width:100%">
+    <p>Vestido Amarelo</p>
+  </article>
+  <article class="w3-third">
+    <p>Colcci</p>
+    <img src="https://static.dafiti.com.br/p/Enfim-Vestido-Enfim-Curto-Liso-Cinza-8753-4295105-1-zoom.jpg" alt="Random Name" style="width:100%">
+    <p>Vestido Branco</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
